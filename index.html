@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/base.js"></script>
+</head>
+
+<body>
+    <!-- container의 rel를 넣은 이유 -> 팝업띄울때 컨텐츠영역의 정가운데여야한다. -->
+    <div class="container rel d-flex">
+        <header id="hd" class="w200 rel zup ">
+
+            <h1><a href="#none">로고</a></h1>
+            <ul id="gnb">
+                <li class="rel">
+                    <a href="#none">대분류</a>
+                    <ul class="abs">
+                        <li><a href="#none">소분류</a></li>
+                        <li><a href="#none">소분류</a></li>
+                        <li><a href="#none">소분류</a></li>
+                        <li><a href="#none">소분류</a></li>
+                        <li><a href="#none">소분류</a></li>
+                    </ul>
+                </li>
+                <li class="rel">
+                    <a href="#none">대분류</a>
+                    <ul class="abs">
+                        <li><a href="#none">소분류</a></li>
+                        <li><a href="#none">소분류</a></li>
+                        <li><a href="#none">소분류</a></li>
+                        <li><a href="#none">소분류</a></li>
+                        <li><a href="#none">소분류</a></li>
+                    </ul>
+                </li>
+                <li class="rel">
+                    <a href="#none">대분류</a>
+                    <ul class="abs">
+                        <li><a href="#none">소분류</a></li>
+                        <li><a href="#none">소분류</a></li>
+                        <li><a href="#none">소분류</a></li>
+                        <li><a href="#none">소분류</a></li>
+                        <li><a href="#none">소분류</a></li>
+                    </ul>
+                </li>
+                <li class="rel">
+                    <a href="#none">대분류</a>
+                    <ul class="abs">
+                        <li><a href="#none">소분류</a></li>
+                        <li><a href="#none">소분류</a></li>
+                        <li><a href="#none">소분류</a></li>
+                        <li><a href="#none">소분류</a></li>
+                        <li><a href="#none">소분류</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+
+        <!-- 스와이퍼 -->
+        <div class="content w800">
+            <div id="swiper" class="ofh h350">
+                <div class="swiper-wrapper ">
+                    <div class="swiper-slide  h350  abs  w800  red action">
+                        <p>슬라이드 내용1</p>
+                        <a href="#none">
+                            <img src="https://webstudybasic.pe.kr/landing/source/C-1/images/slide1.png" alt="swiperimg1">
+                        </a>
+                    </div>
+                    <div class="swiper-slide  h350  abs  w800  red action">
+                        <p>슬라이드 내용2</p>
+                        <a href="#none">
+                            <img src="https://webstudybasic.pe.kr/landing/source/C-1/images/slide2.png" alt="swiperimg1">
+                        </a>
+                    </div>
+                    <div class="swiper-slide  h350  abs  w800  red action">
+                        <p>슬라이드 내용3</p>
+                        <a href="#none">
+                            <img src="https://webstudybasic.pe.kr/landing/source/C-1/images/slide3.png" alt="swiperimg1">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 탭 -->
+            <div class="threeTab d-flex h200 w-100">
+                <div class="twotab rel d-flex">
+                    <div class="notice on">
+                        <h3>공지사항</h3>
+                        <ul class="abs w-100 left0 d-none flex-column">
+                            <li>
+                                <a href="#popupnm">
+                                공지사항내용공지사항내용공지사항내용
+                                </a>
+                                <span>공지사항 날짜</span>
+                            </li>
+                            <li><a href="#none">공지글들</a></li>
+                            <li><a href="#none">공지글들</a></li>
+                            <li><a href="#none">공지글들</a></li>
+                        </ul>
+                    </div>
+                    <div class="gallery">
+                        <h3>갤러리</h3>
+                        <ul class="d-flex abs w-100 left0 d-none">
+                            <li>
+                                <a href="#none">
+                                    <img src="https://webstudybasic.pe.kr/landing/source/B-1/images/gal1.png" alt="img1">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="https://webstudybasic.pe.kr/landing/source/B-1/images/gal1.png" alt="img2">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#none">
+                                    <img src="https://webstudybasic.pe.kr/landing/source/B-1/images/gal1.png" alt="img3">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="banner">
+                    <a href="#none">
+                        <img src="https://webstudybasic.pe.kr/landing/source/C-1/images/banner.png" alt="bnimg1">
+                    </a>
+                </div>
+                <div class="banner2">
+                    <a href="#none">
+                        <img src="https://webstudybasic.pe.kr/landing/source/C-1/images/link.png" alt="bnimg2">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- 컨텐츠의 중앙에 떠야하기때문에 여기에 팝업을 넣는다 -->
+        <div id="popupnm" class="abs bg-white zup">
+            <button class="abs">닫기</button>
+            <p>팝업컨텐츠 넣는곳</p>
+        </div>
+    </div>
+    <!-- 화면중앙에 띄우려면 여기에 팝업넣는다. -->
+</body>
+
+</html>
